@@ -63,7 +63,6 @@ def get_here_results(x, app_id, app_code):
             'MatchLevel': answer.get('MatchLevel'),
             'MatchType': answer.get('MatchType')
             }
-
     # Append some other details:
     output['Addresse_Input'] = x
     return output
@@ -74,10 +73,7 @@ results = []
 errorResults= []
 # Go through each address in turn
 for index, row in tqdm(df.iterrows(), total=df.shape[0]):
-
     # While the address geocoding is not finished:
-
-
             x = row['Address']
             geocoded = False
             while geocoded is not True:
@@ -85,12 +81,13 @@ for index, row in tqdm(df.iterrows(), total=df.shape[0]):
                 # Geocode the address with here
 
                 try:
+					#append the good result in the result DataFrame
                     geocode_result = get_here_results(x, APP_ID, APP_CODE)
                     results.append(geocode_result)
                     logger.debug('OK : {}: {}'.format(x, 'OK'))
                     geocoded = True
                 except Exception, e:
-
+					#append the error result in the results DataFrame
                     results.append({
                         'Addresse_Input' : x,
                         'formatted_address': 'Invalid address input',
@@ -100,6 +97,7 @@ for index, row in tqdm(df.iterrows(), total=df.shape[0]):
                         'MatchLevel': 0,
                         'MatchType': 0
                         })
+					#append the result in the errorResults DataFrame
                     errorResults.append({
                         'Addresse_Input' : x,
                         'formatted_address': 'Invalid address input',
@@ -118,14 +116,17 @@ for index, row in tqdm(df.iterrows(), total=df.shape[0]):
                 pd.DataFrame(errorResults).to_csv("{}_bak".format("errorResults.csv"), encoding='utf-8')
 
 #calculate error results %
-errorCount = len(pd.DataFrame(errorResults))
-totalCount = len(pd.DataFrame(errorResults))
-totalPct = str(errorCount/totalCount)+" % "
-test = pd.DataFrame(results)
-accuracyMean = test['relevance'].mean()
+er = pd.DataFrame(errorResults)
+gr = pd.DataFrame(results)
+errorCount = len(er)
+totalCount = len(gr)
+totalPct = (float(errorCount) / float(totalCount))*100
+accuracyMean = gr['relevance'].mean()
+
 logger.info("Geocoding accuracy is : " + str(accuracyMean))
 
-logger.info( totalPct + " Geocoding errors please refer to the errorResults log file" )
+logger.info( str(totalPct) + "% Geocoding errors please refer to the errorResults log file" )
+
 # Write the full errorResults to csv using the pandas library.
 pd.DataFrame(errorResults).to_csv("errorResults.csv", encoding='utf-8')
 # Write the full errorResults to csv using the pandas library.
