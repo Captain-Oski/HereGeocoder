@@ -23,4 +23,9 @@ output.csv will contains lot of useful informations such as :<br />
   See the Here geocoder documentation here for all details about the results informations provided <br />
  https://developer.here.com/documentation/geocoder/<br />
 
+ New addition : 
+
+ 	- geocoding accuracy (mean) is provided a the end of the running script
+ 	- % of geocoding errors encountered during the process
+
  <br/><a href="https://ibb.co/daA8E6" target="_blank"><img src="https://preview.ibb.co/irXc7R/full.png" alt="full" border="0"></a>
