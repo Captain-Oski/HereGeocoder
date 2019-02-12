@@ -26,8 +26,8 @@ logger.addHandler(ch)
 
 # ---- HERE CONFIG ------#
 
-APP_ID = 'iF6F5I8H5oLzNDG6MNky'
-APP_CODE = 'bIUy6weJ4H1_zEPBisPGvw'
+APP_ID = ''
+APP_CODE = ''
 
 # ------------------ DATA LOADING --------------------------------
 
