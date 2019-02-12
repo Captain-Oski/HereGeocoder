@@ -1,0 +1,13 @@
+﻿FirstName,LastName,Email,Company,Address,Address1,Address2,City,Province,ProvinceCode,Country,CountryCode,Zip,Phone,AcceptsMarketing,TotalSpent,TotalOrders,Tags,Note,TaxExempt,lang
+Emmanuelle,Schumann,emmanuelleschumann@hotmail.com,, 10 099 rue René-Bauset  Montréal H4N3M4 Quebec Canada, 10 099 rue René-Bauset,,Montréal,Quebec,QC,Canada,CA,H4N3M4,5145061637,no,180,4,inactive_subscriber,,no,fr
+Marie-eve,Chalifoux,marie02chalifoux@gmail.com,, 17322 Calixa-lavallée   Mirabel J7j2n7 Quebec Canada, 17322 Calixa-lavallée ,,Mirabel,Quebec,QC,Canada,CA,J7j2n7,4505301991,yes,405,10,active_subscriber,,no,fr
+Carl,Vaillancourt,cavaillancourt@me.com,," 1755, Avenue Dumouchel  Laval H7S1J7 Quebec Canada"," 1755, Avenue Dumouchel",,Laval,Quebec,QC,Canada,CA,H7S1J7,5148308626,yes,292.5,7,active_subscriber,,no,fr
+Sabrina,Lévesque,sabrina.levesque@hotmail.com,, 2300 Rue De Bilbao App 106  Québec  G2C0E4 Quebec Canada, 2300 Rue De Bilbao App 106,,Québec ,Quebec,QC,Canada,CA,G2C0E4,4187148843,yes,90,2,inactive_subscriber,,no,fr
+Chi-Kwok,Li,ckli395@gmail.com,"Place de la Cité, Tour Cominar"," 2640, boul. Laurier Bureau 1300 Québec G1V5C2 Quebec Canada"," 2640, boul. Laurier",Bureau 1300,Québec,Quebec,QC,Canada,CA,G1V5C2,4188052211,yes,135,3,active_subscriber,,no,fr
+Sarah-lisa,Daigneault,sarahlisa22@hotmail.com,," 3225 avenue Cusson, suite 2520 31 Saint-Hyacinthe  J2S0H7 Quebec Canada"," 3225 avenue Cusson, suite 2520",31,Saint-Hyacinthe ,Quebec,QC,Canada,CA,J2S0H7,4388722519,no,180,4,inactive_subscriber,,no,fr
+Stéphan,Tremblay,stephzx5@msn.com,, 5725 Imp Marcel-Breault   Saint Hyacinthe  J2s0b7 Quebec Canada, 5725 Imp Marcel-Breault ,,Saint Hyacinthe ,Quebec,QC,Canada,CA,J2s0b7,(450) 779-2310 ,no,45,2,inactive_subscriber,,no,fr
+Manon,Larouche,larouche451@sympatico.ca,, 600 rue leyrac   Dolbeau-Mistassini  G8l3k3 Quebec Canada, 600 rue leyrac ,,Dolbeau-Mistassini ,Quebec,QC,Canada,CA,G8l3k3,418-276-2201,yes,45,1,active_subscriber,,no,fr
+Rafaelle,Daigneault,rafaelledaigneault@gmail.com,, 7670 Boul des Laurentides   Laval H7H1V8 Quebec Canada, 7670 Boul des Laurentides ,,Laval,Quebec,QC,Canada,CA,H7H1V8,'+14384904531 ,no,134.98,3,active_subscriber,,no,fr
+Tammy,Greiss,tammygreiss@yahoo.com,, 900 56th avenue  Lachine H8T3C2 Quebec Canada, 900 56th avenue,,Lachine,Quebec,QC,Canada,CA,H8T3C2,5145886615,no,83.25,2,active_subscriber,,no,en
+Aida-Dina,St-Laurent,aidadinastla@gmail.com,," 975, boulevard Monseigneur-de-Laval local 201 Baie-Saint-Paul G3Z2W3 Quebec Canada"," 975, boulevard Monseigneur-de-Laval",local 201,Baie-Saint-Paul,Quebec,QC,Canada,CA,G3Z2W3,4182021218,yes,0,1,inactive_subscriber,,no,fr
+
